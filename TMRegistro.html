@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png"/>
+        <title> TECHMOVE - Cadastra/Entrar </title>
+        <link rel="stylesheet" href="styler.css">
+    
+    </head>
+<body>
+    <header class="header">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="TechMove.html"><center><img src="icons/logotipo.png" height="50px" weigth="50px"></center></a>
+            </li>
+            <li class="nav-item ativa"style="margin-top: 20%;">
+              <a class="nav-link active" href="#"><center><img src="icons/cartao.png" height="35px" weigth="35px"></center></a>
+            </li>
+            <li class="nav-item ativa"style="margin-top: 20%;">
+              <a class="nav-link" href="TM-Avaliação.html"><center><img src="icons/contrato.png" height="25px" weigth="35px"></center></a>
+            </li>
+            <li class="nav-item ativa"style="margin-top: 20%;">
+              <a class="nav-link" href="TMRegistro.html"><center><img src="icons/perfil.png" height="30px" weigth="35px"></center></a>
+            </li>
+            <li class="nav-item ativa"style="margin-top: 20%;">
+              <a class="nav-link" href="#"><center><img src="icons/mais.png" height="25px" weigth="35px"></center></a>
+            </li>
+          </ul>
+    </header>
+        <main class="main">
+                    <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-dark bg-dark"
+            style="background-color: black !important; height: 70px;">
+            <a href="TechMove.html"><img src="icons/logotipo.png" alt="" height="50px" weigth="50px"></a>
+            <form class="form-inline busca" style="width: 100 ;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Buscar"
+                    style="background-color: black; padding-right: 500px; border: 0px;">
+                <button class="btn  my-2 my-sm-0" type="submit" style="border: none; background-color: black;"><img
+                        src="icons/lupab.png" alt="" height="25px" weigth="250px"></button>
+            </form>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="background-color: black; border: none">
+                    <img src="icons/redes.png" alt="" height="30px" weigth="35px">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: black;">
+                    <a class="dropdown-item" href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/facebook.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/instagra.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/twitter.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/linkedin.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item" href="#" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/google +.png" height="30px" weigth="35px"></a>
+                </div>
+            </div>
+        </nav>
+            <div class="container caixa-registro">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card card1">
+                            <article class="card-body">
+                                <div class="texto">
+                                    <h4 class="card-title text-left"style= "margin-left: 180px; font-size: 30px"><b>Cadastrar</b></h4>
+                                </div>
+                            <div class="col-12"> 
+                                <form method="post" onsubmit="loginUser (this)">
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                        </div>
+                                    <input name="nomecad" id="nomecad" class="form-control" placeholder="Nome Completo" type="text">
+                                    </div> 
+                                   
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                        </div>
+                                        <input name="emailcad" id="emailcad" class="form-control" placeholder="Email" type="email">
+                                    </div> 
+                                    <div class="row">
+                                        <div class="form-group input-group col-6">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                            </div>
+                                            <input name="senha1cad" id="senha1cad" class="form-control" placeholder="Senha" type="password">
+                                        </div>
+                                        <div class="form-group input-group col-6">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                            </div>
+                                            <input name="senha2cad" id="senha2cad" class="form-control" placeholder="Confirme a Senha" type="password">
+                                        </div>  
+                                    </div>                                    
+                                    <div class="form-group botao">
+                                        <button type="submit" id="criaConta" class="btn btn-block" style="color: white;"> Criar conta </button>
+                                    </div>                                                              
+                                </form>
+                            </div>
+                            </article>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <article class="card-body">
+                                <div class="texto">
+                                    <h4 class="card-title text-left"style= "margin-left: 195px; font-size: 30px"><b>Logar</b></h4>
+                                </div>
+                            <div class="col-12"> 
+                                <form id="login-form" method="post" onsubmit="loginUser (this)">
+                                    <div class="form-group input-group" style="margin-top: 26px;">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                        </div>
+                                        <input name="username" id="username" class="form-control" placeholder="Email" type="email">
+                                    </div> 
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                        </div>
+                                        <input name="password" id="password" class="form-control" placeholder="Senha" type="password">
+                                    </div>                                     
+                                    <div class="form-group botao">
+                                        <button type="submit" name="submit" class="btn btn-block" style="color: white;" value="submit"> Entrar  </button>
+                                    </div>
+                                    <div class="SenhaR">
+                                        <p>Esqueceu a senha? <a href="#">Recupere aqui!</a></p> 
+                                    </div>
+                                </form>
+                            </div>
+                            </article>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 acessob">
+                    <form>
+                    <center><p style="color: white; padding-top: 10px; font-size: 30px;"><b>Acesse também!</b></p></center>
+                    <div class="icon" style="margin-left: 277.7px; padding-bottom: 20px;">
+                        <a href="#"><img src="icons/circular.png" alt="" height="70px" weigth="250px"style= "margin-left: 10px;"></a>
+                        <a href="#"><img src="icons/google +.png" alt=""height="77px" weigth="250px"style= "margin-left: 10px;"></a>
+                        <a href="#"><img src="icons/outlook.jpg" alt=""height="70px" weigth="250px"style= "margin-left: 8.5px;"></a>
+                        <a href="#"><img src="icons/instagram.png" alt=""height="95px" weigth="250px"></a>
+                        <a href="#"><img src="icons/yahoo.png" alt=""height="70px" weigth="250px"style= "margin-left: -2px;"></a>
+                        <a href="#"><img src="icons/linkedin.png" alt=""height="79px" weigth="250px"style= "margin-left: 10px;"> </a>
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-2 menu">
+                        <a class="icon" href="TechMove.html">
+                            <img class="logo" src="icons/logotipo.png" height="50px" weigth="50px">
+                        </a>
+                    </div>
+                    <div class="col-2 menu">
+                        <a class="icon" href="#">
+                            <img src="icons/cartao.png" height="35px" weigth="35px">
+                        </a>
+                    </div>
+                    <div class="col-2 menu">
+                        <a class="icon" href="#">
+                            <img src="icons/contrato.png" height="25px" weigth="35px">
+                        </a>
+                    </div>
+                    <div class="col-2 menu">
+                        <a class="icon" href="TMRegistro.html">
+                            <img src="icons/perfil.png" height="30px" weigth="35px">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="icon" href="#">
+                            <img src="icons/mais.png" height="25px" weigth="35px">
+                        </a>
+                    </div>
+                </div>                
+            </footer>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+        </main>
+        <script src="tm.js"></script>
+        <script>
+        
+            function processaFormLogin (event) {
+
+                event.preventDefault ();
+
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+
+                resultLogin = loginUser (username, password);
+                if (resultLogin) {
+                    window.location.href = 'TechMove.html' /*, 'TM-Avaliação.html'*/;
+                }
+                else {
+                    if(username == 0 || password == 0){
+                        alert('Campos em branco. Favor preenchê-lo')
+                    }
+                    else {
+                    alert ('Usuário ou senha incorretos');
+                    }
+                }
+            }
+            function saveLogin (event) {
+                event.preventDefault ();
+
+                let nomeC = document.getElementById('nomecad').value;
+                let emailC = document.getElementById('emailcad').value;
+                let senhaC1 = document.getElementById('senha1cad').value;
+                let senhaC2 = document.getElementById('senha2cad').value;
+                if (senhaC1 != senhaC2) {
+                    alert ('Senhas não conferem.');
+                    return
+                }
+                if (nomeC == 0 || emailC == 0 || senhaC1 == 0 || senhaC2 == 0) {
+                    alert('Campo em branco. Favor preenchê-lo.')
+                }
+                else {
+                adcDados (nomeC, emailC, senhaC1);
+                alert ('Cadastro realizado com sucesso.')
+                }
+            }
+            document.getElementById ('login-form').addEventListener('submit', processaFormLogin);
+            document.getElementById ('criaConta').addEventListener ('click', saveLogin);
+        </script>
+</body>
+</html>

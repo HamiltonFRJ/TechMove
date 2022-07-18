@@ -1,0 +1,89 @@
+/*function leDados () {
+    let strDados = localStorage.getItem('lndDados')
+    let objDados = {};
+
+    if (strDados) {
+        objDados = JSON.parse (strDados);
+    }
+    else {
+        objDados = { usuarios: [ 
+            {   
+                nome:"Sandy Katielli", 
+                data:"10/05/2020", 
+                email:"sandy3322fk@gmail.com", 
+                numeroV:"12248", 
+                avaliacao: "O techmove facilitou bastante a minha vida."
+            },
+            {   
+                nome:"Gabriel Henrique", 
+                data:"23/02/2020", 
+                email:"gbhfarias@gmail.com", 
+                numeroV:"12249", 
+                avaliacao: "O techmove ajudou bastante."
+            },
+            {   
+                nome:"Thalita Lorrane", 
+                data:"14/08/2020", 
+                email:"lithal@gmail.com", 
+                numeroV:"12250", 
+                avaliacao: "Com techmove posso ver meu saldo."
+            },
+            {   
+                nome:"Hamilton Junior", 
+                data:"11/11/2020", 
+                email:"hamiltonj@gmail.com", 
+                numeroV:"12251", 
+                avaliacao: "Com techmove posso fazer recargas online."
+            },
+            {   
+                nome:"Matheus Faria", 
+                data:"30/12/2020", 
+                email:"fariam@gmail.com", 
+                numeroV:"12252", 
+                avaliacao: "Com techmove posso adquirir beneficios."
+            }
+        ]}
+    }
+    return objDados;
+
+}
+
+function salvaDados (saveDados) {
+    localStorage.setItem('lndDados', JSON.stringify (saveDados));
+}
+
+function addDados () {
+    let strNome = document.getElementById('nomec').value;
+    let strEmail = document.getElementById('emailc').value;
+    let strData = document.getElementById('datac').value;
+    let strNumeroVeiculo = document.getElementById('numerov').value;
+    let strDescricao = document.getElementById('avaliacaoc').value;
+    
+    let novaAv = {
+        nome: strNome,
+        email: strEmail,
+        data: strData,
+        numeroVeiculo: strNumeroVeiculo,
+        descricao: strDescricao
+    };
+
+    objDados.usuarios.push (novaAv);
+    salvaDados (objDados);
+
+}
+
+function imprimeDados () {
+    let tela = document.getElementById('tela');
+    let strHtml = '';
+    let objDados = leDados ();
+
+    for (i=0; i< objDados.usuarios.length, i++;) {
+        strHtml +=`<p>${objDados.usuarios[i].nome} - ${objDados.usuarios[i].data} - ${objDados.usuarios[i].avaliacao}</p>`
+    }
+    
+    tela.innerHTML = strHtml;
+}*/
+
+//configura botoes 
+    //document.getElementById('btnEnviar').addEventListener ('click', addDados);
+

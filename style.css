@@ -1,0 +1,104 @@
+body {overflow-x: hidden;}
+body .header{ background-color: black; height: 100%; width: 5%; position: fixed;}
+.comunicacao {list-style: none;}
+/*Busca*/
+
+/*Conteudo*/
+
+.btn.btn-outline-success:hover { border: none;}
+
+body .main { background-color: #06111F ; height: 100%;}
+body .main .container .col-12 a{ width: 100px;}
+body .main .container .slide .carousel-inner h5{font-size: x-large;}
+body .main .container .slide .carousel-inner p{font-size: large; padding: 5px;}
+
+
+body {background-color: #06111F ;}
+body .main{margin-bottom: 50px;}
+body .main .container .carousel-indicators{bottom: -40px;}
+body .main .container .carousel-indicators .active{background-color: black;}
+body .main .container .carousel-indicators li{border: solid black 1px;}
+
+body .main .container h5 {text-align: center; padding-top: 30px; padding-bottom: 30px; background-color: #ffaa00; border-radius: 4px;}
+body .main .container .botao {color: white;border-radius: 5px; margin-top: 35px; margin-bottom: -10px;}
+body .main .container .botao b {color: white;}
+
+body .main .teste {margin-left: 100px;}
+
+body .footer{background-color: black; height: 80px; width: 100%; display: block; justify-content: end; display: flex;}
+body .footer a:hover{background-color: #27364d; justify-content: center;}
+
+body .footer{display: flex;}
+body .footer .row .col-2 {margin-left: 10px; margin-top: 20px; width: 100px;} 
+body .footer .row .col-2 a{text-align: justify;}
+body .footer .row .col-2 .logo{height: 35px; width: 30px;}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 16px;
+}
+  
+::-webkit-scrollbar-track-piece {
+    background-color: #161e29;
+    -webkit-border-radius: 3px;
+}
+  
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #27364d;
+    -webkit-border-radius: 3px;
+}
+@media screen and (min-width: 1367px) and (max-width: 1920px){
+    .footer{display: none !important;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1367px){
+    .header{width: 70px !important;}
+    .main .textoplano { margin-left: 100px;}
+    .main .card1 { width: 100%;}
+    .main .card2 { width: 100%;}
+    .main .card3 { width: 100%;}
+    .footer{display:none !important;}
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1000px) {
+    .header {display: none;}
+    .main .conteudo { margin-left: -17px;}
+    .main .carrossel { margin-left: -23px;}
+    .main .buscar { padding-right: 300px;}
+    .main .teste {margin-left: 10px !important;}
+    .main .textoplano { margin-left: 100px;}
+    .main .card1 { max-width: 500px; margin-left: 39px; }
+    .main .card2 { max-width: 500px; margin-left: 10px; }
+    .main .card3 { max-width: 500px; margin-left: 135px; margin-top: 20px; margin-bottom: 50px;}
+    .footer{display:none !important;}
+    .main .busca {display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .header {display: none;}
+    .main #carrossel { margin-right: 50px;}
+    .main .textoplano { margin-left: 100px;}
+    .main .teste {margin-left: 10px !important;}
+    .main .card1 { max-width: 400px; margin-left: -20px; }
+    .main .card2 { max-width: 400px; margin-left: px; }
+    .main .card3 { max-width: 400px; margin-left: 75px; margin-top: 20px; margin-bottom: 50px;}
+
+    .main .busca {display: none;}
+    .footer{position: fixed; bottom: 0; z-index:999;}
+}
+
+@media screen and (min-width: 240px) and (max-width: 767px) {
+    .header {display: none;}
+    .main {position: relative;}
+    .main .busca {display: none;}
+    .main .teste {margin-left: 10px !important;}
+    .main .conteudo { margin-left: -15px;}
+    .main .planos { margin-left: -20px;}
+    .main #textoplano { margin-left: 50px !important;}
+    .main .card2 {margin-top: 20px;}
+    .main .card3 {margin-top: 11px; margin-bottom: 40px;}
+    .main .container .carrossel_ .carousel-inner{height: 250px;}
+    .main .container .carrossel_ .carousel-inner .img_c{height: 250px;}
+    .footer{position: fixed; bottom: 0; z-index:999;}
+}

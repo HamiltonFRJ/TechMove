@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png"/>
+    <title> TECHMOVE - Avaliação </title>
+    <link rel="stylesheet" href="style-avaliação.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="TechMove.html">
+                    <center><img src="icons/logotipo.png" height="50px" weigth="50px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link active" href="#">
+                    <center><img src="icons/cartao.png" height="35px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="TM-Avaliação.html">
+                    <center><img src="icons/contrato.png" height="25px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="TMRegistro.html">
+                    <center><img src="icons/perfil.png" height="30px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="#">
+                    <center><img src="icons/mais.png" height="25px" weigth="35px"></center>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-dark bg-dark"
+            style="background-color: black !important; height: 70px;">
+            <a href="TechMove.html"><img src="icons/logotipo.png" alt="" height="50px" weigth="50px"></a>
+            <form class="form-inline busca" style="width: 100 ;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Buscar"
+                    style="background-color: black; padding-right: 500px; border: 0px;">
+                <button class="btn  my-2 my-sm-0" type="submit" style="border: none; background-color: black;"><img
+                        src="icons/lupab.png" alt="" height="25px" weigth="250px"></button>
+            </form>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="background-color: black; border: none">
+                    <img src="icons/redes.png" alt="" height="30px" weigth="35px">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: black;">
+                    <a class="dropdown-item"
+                        href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/facebook.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/instagra.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/twitter.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/linkedin.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="#" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/google +.png" height="30px" weigth="35px"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="container caixa-avaliacao">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card card1">
+                        <article class="card-body">
+                            <div class="texto">
+                                <h4 class="card-title text-left" style="font-size: 30px">
+                                <b><center>Avaliação</center></b></h4>
+                            </div>
+                            <div class="col-12">
+                                <form id="form-avaliacao">
+                                <div class="row">
+                                    <div class="form-group input-group col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                        </div>
+                                        <input name="numerovAva" id="numerovAva" class="form-control" placeholder="Número do veículo" type="text">
+                                    </div>
+                                    <div class="form-group input-group col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                        </div>
+                                        <input name="dataAva" id="dataAva" class="form-control" placeholder="Data" type="date">
+                                    </div>
+                                </div>
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                        </div>
+                                        <textarea name="descAva" id="descAva" class="form-control desc" placeholder="Descrição" type=""></textarea>
+                                    </div>
+                                    <div><p style="color: white;">*A data deve ser preenchida conforme o dia que o veículo foi utilizado*</p></div>
+                                    <div class="form-group botao">
+                                        <button id="btn_Enviar" type="submit" class="btn btn-block" style="color: white;"> Enviar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left: 240px; margin-top: 30px; width: 500px; background-color: gray; border-radius: 5px; border: black; color: white;" id="tela">
+            
+        </div>
+        
+        <footer class="footer">
+            <div class="row">
+                <div class="col-2 menu">
+                    <a class="icon" href="TechMove.html">
+                        <img class="logo" src="icons/logotipo.png" height="50px" weigth="50px">
+                    </a>
+                </div>
+                <div class="col-2 menu">
+                    <a class="icon" href="#">
+                        <img src="icons/cartao.png" height="35px" weigth="35px">
+                    </a>
+                </div>
+                <div class="col-2 menu">
+                    <a class="icon" href="#">
+                        <img src="icons/contrato.png" height="25px" weigth="35px">
+                    </a>
+                </div>
+                <div class="col-2 menu">
+                    <a class="icon" href="TMRegistro.html">
+                        <img src="icons/perfil.png" height="30px" weigth="35px">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a class="icon" href="#">
+                        <img src="icons/mais.png" height="25px" weigth="35px">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    </main>
+</body>
+<script src="tmav.js"></script>
+<script src="tm.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+            /*if (!usuarioCorrente.login) {
+                
+                alert("Faça login para avaliar.")
+            }
+            //window.location.href = AVALIACAO_URL;
+            //else {
+            function saveAvaliacao (event) {
+                event.preventDefault ();
+
+                let numeroV = document.getElementById('numerovAva').value;
+                let dataV = document.getElementById('dataAva').value;
+                let descV= document.getElementById('descAva').value;
+
+                if (numeroV == 0 || dataV == 0 || descV == 0 ) {
+                    alert('Campo em branco. Favor preenchê-lo.')
+                }
+                else {
+                adcAvaliacao (numeroV, dataV, descV);
+                //alert ('Avaliação realizado com sucesso.')
+
+                let listaAvaliacoes = '';
+                for(i = 0; i < db_avaliacoes.avalicoesDados.length;i++) {
+                let av = db_avaliacoes.avalicoesDados[i];
+                listaAvaliacoes += `<tr><td scope="row">${av.numeroV}</td><td scope="row">${av.dataV}</td><td scope="row">${av.descV}</td></td>`;
+                }
+                document.getElementById("tela").innerHTML = listaAvaliacoes
+                }
+            }
+            document.getElementById ('btn_Enviar').addEventListener ('click', saveAvaliacao);
+            //}
+            
+     
+
+
+            //function imprimeAvaliacao() {
+            //let listaAvaliacoes = '';
+           // for(i = 0; i < db_avaliacoes.avalicoesDados.length;i++) {
+           //     let av = db_avaliacoes.avalicoesDados[i];
+           //     listaAvaliacoes += `<tr><td scope="row">${av.numeroV}</td><td scope="row">${av.dataV}</td><td scope="row">${av.descV}</td></td>`;
+//}
+           // document.getElementById("tela").innerHTML = listaAvaliacoes
+           // }
+          //  document.getElementById ('btn_Enviar').addEventListener ('click', imprimeAvaliacao);*/
+    </script>
+
+</html>

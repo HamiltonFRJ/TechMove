@@ -1,0 +1,213 @@
+
+*************************************CÓDIGO ANTIGO**************************************************
+const AVALIACAO_URL = "TM-Avaliação.html";
+
+var db_avaliacoes = {};
+
+var avaliacaoCorrente = {};
+
+const avaliacoesIniciais = {
+    avaliacoesDados: [
+        /*{
+            "id": generateUUID (),
+            "nomeC": "Admin do TM",
+            "emailC": "admintm@abc.com",
+            "senhaC1": "159fk"
+        },
+        {
+            "id": generateUUID (),
+            "nomeC": "Admin2 do TM",
+            "emailC": "admin2tm@abc.com",
+            "senhaC1": "753fk"
+        }*/
+    ] 
+};
+
+function initAvaliacaoApp () {
+    avaliacaoCorrenteJSON = sessionStorage.getItem('avaliacaoCorrente');
+    if (avaliacaoCorrenteJSON) {
+        avaliacaoCorrente = JSON.parse (avaliacaoCorrenteJSON);
+    }
+
+    var avaliacoesJSON = localStorage.getItem('db_avaliacoes');
+
+    if (!avaliacoesJSON) {
+        //alert('Dados de usuário não encontrador. \n Cadastre-se.');
+
+        db_avaliacoes = avaliacoesIniciais;
+
+        localStorage.setItem('db_avaliacoes', JSON.stringify(avaliacoesIniciais));
+    }
+    else {
+        db_avaliacoes = JSON.parse(avaliacoesJSON);
+    }
+};
+
+function adcAvaliacao (numeroV, dataV, descV) {
+    let avaliacao = {
+        "numeroVeiculo": numeroV,
+        "dataAvaliacao": dataV,
+        "descAvaliacao": descV
+    };
+
+    db_avaliacoes.avaliacoesDados.push (avaliacao);
+    
+    localStorage.setItem('db_avaliacoes', JSON.stringify(db_avaliacoes));
+}
+
+function setUserPass () {
+
+}
+
+initAvaliacaoApp ();
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+if (!usuarioCorrente.login) {
+                
+                alert("Faça login para avaliar.")
+            }*/
+            //window.location.href = AVALIACAO_URL;
+            //else {
+            function saveAvaliacao (event) {
+                event.preventDefault ();
+
+                let numeroV = document.getElementById('numerovAva').value;
+                let dataV = document.getElementById('dataAva').value;
+                let descV= document.getElementById('descAva').value;
+
+                if (numeroV == 0 || dataV == 0 || descV == 0 ) {
+                    alert('Campo em branco. Favor preenchê-lo.')
+                }
+                else {
+                adcAvaliacao (numeroV, dataV, descV);
+                //alert ('Avaliação realizado com sucesso.')
+
+                let listaAvaliacoes = '';
+                for(i = 0; i < db_avaliacoes.avalicoesDados.length;i++) {
+                let av = db_avaliacoes.avalicoesDados[i];
+                listaAvaliacoes += `<tr><td scope="row">${av.numeroV}</td><td scope="row">${av.dataV}</td><td scope="row">${av.descV}</td></td>`;
+                }
+                document.getElementById("tela").innerHTML = listaAvaliacoes
+                }
+            }
+            document.getElementById ('btn_Enviar').addEventListener ('click', saveAvaliacao);
+            //}
+            
+     
+
+
+            //function imprimeAvaliacao() {
+            //let listaAvaliacoes = '';
+           // for(i = 0; i < db_avaliacoes.avalicoesDados.length;i++) {
+           //     let av = db_avaliacoes.avalicoesDados[i];
+           //     listaAvaliacoes += `<tr><td scope="row">${av.numeroV}</td><td scope="row">${av.dataV}</td><td scope="row">${av.descV}</td></td>`;
+//}
+           // document.getElementById("tela").innerHTML = listaAvaliacoes
+           // }
+          //  document.getElementById ('btn_Enviar').addEventListener ('click', imprimeAvaliacao);
+
+
+***************************************************CODIGO NOVO**********************************************************
+// declara um conjunto inicial de contatos
+var db_avaliacao_inicial = {
+    "av": [
+        {
+            "numeroV": 1,
+            "dataV": "Leanne Graham",
+            "descricaoV": "Belo Horizonte",
+        },
+        {
+            "numeroV": 2,
+            "dataV": "Ervin Howell",
+            "descricaoV": "Betim",
+        },
+        {
+            "numeroV": 3,
+            "dataV": "Clementine Bauch",
+            "descricaoV": "Rio de Janeiro",
+        }
+    ]
+}
+
+// Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
+var db = JSON.parse(localStorage.getItem('db_avaliacao'));
+if (!db) {
+    db = db_avaliacao_inicial
+};
+
+// Exibe mensagem em um elemento de ID msg
+function displayMessage(msg) {
+    $('#msg').html('<div class="alert alert-warning">' + msg + '</div>');
+}
+
+function insertAvaliacao(avaliacao) {
+    // Calcula novo Id a partir do último código existente no array (PODE GERAR ERRO SE A BASE ESTIVER VAZIA)
+    let novaAvaliacao = {
+        "numeroV": avaliacao.numero,
+        "dataV": avaliacao.data,
+        "descricaoV": avaliacao.desc
+    };
+
+    // Insere o novo objeto no array
+    db.db.push(novaAvaliacao);
+    displayMessage("Avaliação inserido com sucesso");
+
+    // Atualiza os dados no Local Storage
+    localStorage.setItem('db_avaliacao', JSON.stringify(db));
+}
+-----------------------------------------------------------------------------------------------------------------------------------------
+        function exibeAvaliacao() {
+            // Remove todas as linhas do corpo da tabela
+            $("#teste").html("");
+
+            // Popula a tabela com os registros do banco de dados
+            for (i = 0; i < db.av.length; i++) {
+                let contato = db.av[i];    
+                $("#teste").append(`<tr><td scope="row">${contato.numero}</td>
+                                                <td>${contato.data}</td>
+                                                <td>${contato.desc}</td>
+                                            </tr>`);
+            }
+        }
+
+        function init() {
+            // Adiciona funções para tratar os eventos 
+            $("#btn_Enviar").click(function () {
+                // Verfica se o formulário está preenchido corretamente
+                if (!$('#form-avaliacao')[0].checkValidity()) {
+                    displayMessage("Preencha o formulário corretamente.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoNumeroV = $("#inputNumeroV").val();
+                let campoDataV = $("#inputDataV").val();
+                let campoDescV = $('#inputDescV').val();
+                let avaliacao = { 
+                    numero: campoNumeroV, 
+                    data: campoDataV, 
+                    desc: campoDescV, 
+                    };
+
+                insertAvaliacao(avaliacao);
+
+                // Reexibe os contatos
+                exibeAvaliacao();
+
+                // Limpa o formulario
+                $("#form-avaliacao")[0].reset();
+            });
+
+            // Oculta a mensagem de aviso após alguns segundos
+            $('#msg').bind("DOMSubtreeModified", function () {
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                        $(this).remove();
+                    });
+                }, 5000);
+            });
+
+        }

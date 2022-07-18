@@ -1,0 +1,84 @@
+body, html{overflow-x: hidden;}
+
+body .header{ background-color: black; height: 100%; width: 5%; position: fixed;}
+
+body {background-color: #06111F ;}
+.main { background-color: #06111F; }
+.main .caixa-registro {margin-top: 80px; margin-left: 14.8%;}
+.main .caixa-registro .acessob {background-color: #7A7B87; margin-top: 30px; border-radius: 5px;}
+.main .container .row .card { background-color: #7A7B87; border: 0px;}
+.main .container .row .card .SenhaR p { text-align: center;}
+.main .container .row .card .SenhaR a {color: white; text-decoration: none;}
+.main .container .row .texto {color: white;}
+.main .container .row .texto h4 { padding-left: 15px;}
+
+.divider-text {position: relative; text-align: center; margin-top: 15px; margin-bottom: 15px;}
+.divider-text span { padding: 7px; font-size: 12px; position: relative; z-index: 2;}
+.divider-text:after {content: ""; position: absolute; width: 100%; border-bottom: 1px solid #ddd; top: 55%; left: 0; z-index: 1;}
+.main .container .row .card .botao { background-color: #27364d; border-radius: 5px;}
+.main .container .row .card .botao button:hover { background-color: #304767; }
+.main .container .row .card .link a { color: white;} 
+.main .container .row .card .link a:hover { color: rgb(0, 0, 0);} 
+
+body .footer{display: flex; background-color: black;}
+body .footer .row .col-2 {margin-left: 10px; margin-top: 20px; width: 100px;} 
+body .footer .row .col-2 a{text-align: justify;}
+body .footer .row .col-2 .logo{height: 35px; width: 30px;}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 16px;
+}
+  
+::-webkit-scrollbar-track-piece {
+    background-color: #161e29;
+    -webkit-border-radius: 3px;
+}
+  
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #27364d;
+    -webkit-border-radius: 3px;
+}
+@media screen and (min-width: 1367px) and (max-width: 1920px){
+    .footer{display: none !important;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1367px){
+    .header{width: 70px !important;}
+    .main .caixa-registro { margin-left: 73px;}
+    .main .caixa-registro .card .card-title { margin-left:10px !important;}
+    .main .caixa-registro .icon { margin-left: 200px !important;}
+    .footer{display:none !important;}
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1000px) {
+    .header {display: none;}
+    .footer{display:none !important;}
+    .main .busca {display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .header {display: none;}
+    .main {position: relative;}
+    .main .caixa-registro { margin-left: 25px; margin-top: 20px !important;}
+    .main .caixa-registro .card1 {margin-bottom: 30px;}
+    .main .caixa-registro .card .card-title { margin-left:0px !important;}
+    .main .caixa-registro .icon { margin-left: 75px !important;}
+    .main .caixa-registro .acessob { margin-bottom: 50px !important;}
+    .footer{position: fixed; bottom: 0; z-index:999; width: 100%;}
+    .footer .menu {width: 100%; margin-right: 11px !important; padding-bottom: 15px;}
+    .main .busca {display: none;}
+}
+
+@media screen and (min-width: 240px) and (max-width: 767px) {
+    .header {display: none;}
+    .main {position: relative;}
+    .main .caixa-registro { margin-left: 0px; margin-top: 20px !important;}
+    .main .caixa-registro .acessob {margin-bottom: 80px !important;}
+    .main .caixa-registro .card1 {margin-bottom: 30px;}
+    .main .caixa-registro .card .card-title { margin-left:0px !important;}
+    .main .caixa-registro .icon { margin-left: 75px !important;}
+    .footer{position: fixed; bottom: 0; z-index:999; padding-bottom: 10px !important;}
+    .main .busca {display: none;}
+}
+
